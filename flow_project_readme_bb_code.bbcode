@@ -1,0 +1,14 @@
+[b]Help[/b]
+
+[code]$data = array('name' => 'Bob', 'age' => 40);
+$payload = json_encode($data);
+
+$response->getBody()->write($payload);
+return $response
+          ->withHeader('Content-Type', 'application/json');
+[/code]
+
+[color=#333333][size=3][font="Helvetica Neue", Helvetica, Arial, sans-serif][color=#777777][size=1]Figure 15: Returning JSON with a 200 HTTP status code.[/size][/color][/font][/size][/color]
+[color=#333333][size=3][font="Helvetica Neue", Helvetica, Arial, sans-serif]We can also return JSON data with a custom HTTP status code.[/font][/size][/color]
+
+
