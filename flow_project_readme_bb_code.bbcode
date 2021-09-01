@@ -3,7 +3,9 @@
 [li]i'ts fun[/li]
 [/ol]
 
-[code]$data = array('name' => 'Bob', 'age' => 40);
+[code]
+#javascript#
+$data = array('name' => 'Bob', 'age' => 40);
 $payload = json_encode($data);
 
 $response->getBody()->write($payload);
